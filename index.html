@@ -3,202 +3,574 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Foot Locker Canada</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>Foot Locker Canada - Premium Sneakers & Athletic Apparel</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Header -->
-  <header class="header">
-    <div class="container header-top">
-      <div class="logo">Foot Locker</div>
-      <nav class="nav">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li class="dropdown">
-            <a href="#">Shoes</a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Men</a></li>
-              <li><a href="#">Women</a></li>
-              <li><a href="#">Kids</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Apparel</a></li>
-          <li><a href="#">Sale</a></li>
-        </ul>
-      </nav>
-      <div class="header-icons">
-        <a href="#" class="icon">🔍</a>
-        <a href="#" class="icon">🛒</a>
-        <a href="#" class="icon" id="menu-toggle">☰</a>
-      </div>
-    </div>
-  </header>
-
-  <!-- Mobile Navigation -->
-  <div class="mobile-nav" id="mobile-nav">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li class="dropdown">
-        <a href="#">Shoes</a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Men</a></li>
-          <li><a href="#">Women</a></li>
-          <li><a href="#">Kids</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Apparel</a></li>
-      <li><a href="#">Sale</a></li>
-    </ul>
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar">
+    <p>🚚 Free shipping on orders over $100 | 🎉 New arrivals daily</p>
   </div>
 
-  <!-- Hero Banner -->
-  <section class="hero">
-    <div class="container hero-content">
-      <h1>Step Into the Latest Styles</h1>
-      <p>Discover new sneakers and apparel for every athlete in you.</p>
-      <div class="hero-buttons">
-        <a href="#" class="btn btn-primary">Shop Men</a>
-        <a href="#" class="btn btn-primary">Shop Women</a>
-        <a href="#" class="btn btn-primary">Shop Kids</a>
-        <a href="#" class="btn btn-secondary">Shop New Arrivals</a>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-container">
+      <!-- Logo -->
+      <div class="logo-section">
+        <a href="#" class="logo">
+          <span class="logo-text">FOOT</span>
+          <span class="logo-accent">LOCKER</span>
+        </a>
+      </div>
+
+      <!-- Search Bar -->
+      <div class="search-bar">
+        <input 
+          type="text" 
+          class="search-input" 
+          placeholder="Search sneakers, brands, styles..."
+          id="searchInput"
+        />
+        <button class="search-btn">🔍</button>
+      </div>
+
+      <!-- Navigation -->
+      <nav class="main-nav">
+        <ul class="nav-menu">
+          <li><a href="#" class="nav-link">Men</a></li>
+          <li><a href="#" class="nav-link">Women</a></li>
+          <li><a href="#" class="nav-link">Kids</a></li>
+          <li><a href="#" class="nav-link">Brands</a></li>
+          <li><a href="#" class="nav-link">Sales</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Icons -->
+      <div class="header-icons">
+        <button class="icon-btn account-btn" title="My Account">👤</button>
+        <button class="icon-btn wishlist-btn" title="Wishlist">
+          <span class="heart-icon">♡</span>
+        </button>
+        <button class="icon-btn cart-btn" title="Shopping Cart">
+          <span class="cart-icon">🛒</span>
+          <span class="cart-badge">0</span>
+        </button>
+        <button class="menu-toggle" id="menuToggle">☰</button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Menu -->
+    <nav class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">Kids</a></li>
+        <li><a href="#">Brands</a></li>
+        <li><a href="#">Sales</a></li>
+        <li><a href="#">My Account</a></li>
+        <li><a href="#">Wishlist</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Banner Section -->
+  <section class="hero-banner">
+    <div class="hero-content">
+      <div class="hero-text">
+        <span class="hero-badge">NEW COLLECTION</span>
+        <h1 class="hero-title">Step Into The Game</h1>
+        <p class="hero-subtitle">Discover the latest premium sneakers and athletic apparel designed for champions</p>
+        <div class="hero-buttons">
+          <button class="btn btn-primary">Shop Men's</button>
+          <button class="btn btn-secondary">Shop Women's</button>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.1&auto=format&fit=crop&w=800&q=80" alt="Premium Sneakers" />
       </div>
     </div>
   </section>
 
-  <!-- Featured Products -->
-  <section class="featured-products">
+  <!-- Quick Category Navigation -->
+  <section class="category-nav">
     <div class="container">
-      <h2>Featured Products</h2>
-      <div class="product-grid">
-        <!-- Sample Product Card -->
-        <div class="product-card">
-          <img src="https://via.placeholder.com/300x300?text=Sneaker+1" alt="Sneaker 1" />
-          <h3>Air Max 270</h3>
-          <p class="price">$150</p>
-          <div class="ratings">★★★★☆</div>
-          <a href="#" class="btn btn-secondary">Shop Now</a>
-        </div>
-        <div class="product-card">
-          <img src="https://via.placeholder.com/300x300?text=Sneaker+2" alt="Sneaker 2" />
-          <h3>Jordan Retro 6</h3>
-          <p class="price">$200</p>
-          <div class="ratings">★★★★☆</div>
-          <a href="#" class="btn btn-secondary">Shop Now</a>
-        </div>
-        <div class="product-card">
-          <img src="https://via.placeholder.com/300x300?text=Apparel+1" alt="Apparel 1" />
-          <h3>Sport Tee</h3>
-          <p class="price">$35</p>
-          <div class="ratings">★★★☆☆</div>
-          <a href="#" class="btn btn-secondary">Shop Now</a>
-        </div>
-        <!-- Add more products as needed -->
+      <div class="category-grid">
+        <a href="#" class="category-card">
+          <div class="category-icon">👟</div>
+          <h3>Shop Men</h3>
+          <p>Trending Now</p>
+        </a>
+        <a href="#" class="category-card">
+          <div class="category-icon">👠</div>
+          <h3>Shop Women</h3>
+          <p>New Arrivals</p>
+        </a>
+        <a href="#" class="category-card">
+          <div class="category-icon">🧒</div>
+          <h3>Shop Kids</h3>
+          <p>Family Styles</p>
+        </a>
+        <a href="#" class="category-card">
+          <div class="category-icon">🏷️</div>
+          <h3>Shop Sale</h3>
+          <p>Up to 50% Off</p>
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- Trending Releases -->
-  <section class="trending">
+  <!-- Featured Products Section -->
+  <section class="featured-section">
     <div class="container">
-      <h2>Trending Releases</h2>
-      <div class="product-carousel">
-        <!-- Sample Trending Product -->
+      <div class="section-header">
+        <h2 class="section-title">Featured Products</h2>
+        <a href="#" class="view-all-link">View All →</a>
+      </div>
+      <div class="products-grid">
         <div class="product-card">
-          <img src="https://via.placeholder.com/300x300?text=Trendy+1" alt="Trendy 1" />
-          <h3>Yeezy Boost 350</h3>
-          <p class="price">$220</p>
-          <a href="#" class="btn btn-secondary">Shop Now</a>
+          <div class="product-badge premium">Premium</div>
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.1&auto=format&fit=crop&w=400&q=80" alt="Nike Air Max 270" />
+            <div class="product-hover">
+              <button class="quick-view-btn">Quick View</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-brand">NIKE</span>
+            <h3 class="product-name">Air Max 270</h3>
+            <div class="product-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-count">(127)</span>
+            </div>
+            <div class="product-price">
+              <span class="current-price">$189.99</span>
+              <span class="original-price">$210.00</span>
+            </div>
+            <button class="btn btn-add-cart">Add to Cart</button>
+          </div>
         </div>
+
         <div class="product-card">
-          <img src="https://via.placeholder.com/300x300?text=Trendy+2" alt="Trendy 2" />
-          <h3>Nike Dunk Low</h3>
-          <p class="price">$130</p>
-          <a href="#" class="btn btn-secondary">Shop Now</a>
+          <div class="product-badge sale">-20%</div>
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?ixlib=rb-4.0.1&auto=format&fit=crop&w=400&q=80" alt="Jordan Retro 6" />
+            <div class="product-hover">
+              <button class="quick-view-btn">Quick View</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-brand">JORDAN</span>
+            <h3 class="product-name">Jordan Retro 6</h3>
+            <div class="product-rating">
+              <span class="stars">★★★★☆</span>
+              <span class="rating-count">(89)</span>
+            </div>
+            <div class="product-price">
+              <span class="current-price">$179.99</span>
+              <span class="original-price">$225.00</span>
+            </div>
+            <button class="btn btn-add-cart">Add to Cart</button>
+          </div>
         </div>
-        <!-- Add more trending products as needed -->
+
+        <div class="product-card">
+          <div class="product-badge new">NEW</div>
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1508215885033-f5b8d95f3a0f?ixlib=rb-4.0.1&auto=format&fit=crop&w=400&q=80" alt="Adidas Ultraboost" />
+            <div class="product-hover">
+              <button class="quick-view-btn">Quick View</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-brand">ADIDAS</span>
+            <h3 class="product-name">Ultraboost 22</h3>
+            <div class="product-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-count">(156)</span>
+            </div>
+            <div class="product-price">
+              <span class="current-price">$199.99</span>
+            </div>
+            <button class="btn btn-add-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-badge premium">Premium</div>
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1520003000492-d7f38050b360?ixlib=rb-4.0.1&auto=format&fit=crop&w=400&q=80" alt="Puma RS-X" />
+            <div class="product-hover">
+              <button class="quick-view-btn">Quick View</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-brand">PUMA</span>
+            <h3 class="product-name">RS-X Running Shoe</h3>
+            <div class="product-rating">
+              <span class="stars">★★★★☆</span>
+              <span class="rating-count">(72)</span>
+            </div>
+            <div class="product-price">
+              <span class="current-price">$129.99</span>
+              <span class="original-price">$150.00</span>
+            </div>
+            <button class="btn btn-add-cart">Add to Cart</button>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Best Sellers -->
-  <section class="best-sellers">
+  <!-- Trending Releases Section -->
+  <section class="trending-section">
     <div class="container">
-      <h2>Best Sellers</h2>
-      <div class="product-grid">
+      <div class="section-header">
+        <h2 class="section-title">Trending Releases</h2>
+        <a href="#" class="view-all-link">View All →</a>
+      </div>
+      <div class="products-grid">
         <div class="product-card">
-          <img src="https://via.placeholder.com/300x300?text=Bestseller+1" alt="Bestseller 1" />
-          <h3>Adidas UltraBoost</h3>
-          <p class="price">$180</p>
-          <a href="#" class="btn btn-secondary">Shop Now</a>
+          <div class="product-badge hot">🔥 HOT</div>
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1494341990857-2b5039893a00?ixlib=rb-4.0.1&auto=format&fit=crop&w=400&q=80" alt="Nike Dunk Low" />
+            <div class="product-hover">
+              <button class="quick-view-btn">Quick View</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-brand">NIKE</span>
+            <h3 class="product-name">Dunk Low Retro</h3>
+            <div class="product-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-count">(203)</span>
+            </div>
+            <div class="product-price">
+              <span class="current-price">$139.99</span>
+            </div>
+            <button class="btn btn-add-cart">Add to Cart</button>
+          </div>
         </div>
+
         <div class="product-card">
-          <img src="https://via.placeholder.com/300x300?text=Bestseller+2" alt="Bestseller 2" />
-          <h3>Puma RS-X</h3>
-          <p class="price">$110</p>
-          <a href="#" class="btn btn-secondary">Shop Now</a>
+          <div class="product-badge hot">🔥 HOT</div>
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1462562692292-402350c1eceb?ixlib=rb-4.0.1&auto=format&fit=crop&w=400&q=80" alt="New Balance 990" />
+            <div class="product-hover">
+              <button class="quick-view-btn">Quick View</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-brand">NEW BALANCE</span>
+            <h3 class="product-name">990v6</h3>
+            <div class="product-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-count">(178)</span>
+            </div>
+            <div class="product-price">
+              <span class="current-price">$209.99</span>
+            </div>
+            <button class="btn btn-add-cart">Add to Cart</button>
+          </div>
         </div>
-        <!-- Add more best sellers as needed -->
+
+        <div class="product-card">
+          <div class="product-badge new">NEW</div>
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.1&auto=format&fit=crop&w=400&q=80" alt="Converse Chuck Taylor" />
+            <div class="product-hover">
+              <button class="quick-view-btn">Quick View</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-brand">CONVERSE</span>
+            <h3 class="product-name">Chuck Taylor All Star</h3>
+            <div class="product-rating">
+              <span class="stars">★★★★☆</span>
+              <span class="rating-count">(145)</span>
+            </div>
+            <div class="product-price">
+              <span class="current-price">$84.99</span>
+            </div>
+            <button class="btn btn-add-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-badge premium">Premium</div>
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1505521052170-d1842748f4c5?ixlib=rb-4.0.1&auto=format&fit=crop&w=400&q=80" alt="Vans Old Skool" />
+            <div class="product-hover">
+              <button class="quick-view-btn">Quick View</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-brand">VANS</span>
+            <h3 class="product-name">Old Skool Pro</h3>
+            <div class="product-rating">
+              <span class="stars">★★★★☆</span>
+              <span class="rating-count">(134)</span>
+            </div>
+            <div class="product-price">
+              <span class="current-price">$89.99</span>
+            </div>
+            <button class="btn btn-add-cart">Add to Cart</button>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Promotions & Launches -->
-  <section class="promotions">
-    <div class="container promo-blocks">
-      <div class="promo-item">
-        <img src="https://via.placeholder.com/600x300?text=Exclusive+Launch" alt="Exclusive Launch" />
-        <div class="promo-content">
-          <h3>Exclusive Launches</h3>
-          <p>Be the first to get the latest limited editions.</p>
-          <a href="#" class="btn btn-primary">Shop Now</a>
+  <!-- Best Sellers Section -->
+  <section class="best-sellers-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Best Sellers</h2>
+        <a href="#" class="view-all-link">View All →</a>
+      </div>
+      <div class="products-grid">
+        <div class="product-card">
+          <div class="product-badge bestseller">Best Seller</div>
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1560088324-4f102e896e95?ixlib=rb-4.0.1&auto=format&fit=crop&w=400&q=80" alt="Nike Court Legacy" />
+            <div class="product-hover">
+              <button class="quick-view-btn">Quick View</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-brand">NIKE</span>
+            <h3 class="product-name">Court Legacy Mid</h3>
+            <div class="product-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-count">(421)</span>
+            </div>
+            <div class="product-price">
+              <span class="current-price">$99.99</span>
+              <span class="original-price">$120.00</span>
+            </div>
+            <button class="btn btn-add-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-badge bestseller">Best Seller</div>
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?ixlib=rb-4.0.1&auto=format&fit=crop&w=400&q=80" alt="adidas Stan Smith" />
+            <div class="product-hover">
+              <button class="quick-view-btn">Quick View</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-brand">ADIDAS</span>
+            <h3 class="product-name">Stan Smith</h3>
+            <div class="product-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-count">(512)</span>
+            </div>
+            <div class="product-price">
+              <span class="current-price">$109.99</span>
+              <span class="original-price">$130.00</span>
+            </div>
+            <button class="btn btn-add-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-badge bestseller">Best Seller</div>
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.1&auto=format&fit=crop&w=400&q=80" alt="Nike Air Force 1" />
+            <div class="product-hover">
+              <button class="quick-view-btn">Quick View</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-brand">NIKE</span>
+            <h3 class="product-name">Air Force 1 '07</h3>
+            <div class="product-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-count">(678)</span>
+            </div>
+            <div class="product-price">
+              <span class="current-price">$119.99</span>
+              <span class="original-price">$140.00</span>
+            </div>
+            <button class="btn btn-add-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-badge bestseller">Best Seller</div>
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1465056836643-15cea6ceb14e?ixlib=rb-4.0.1&auto=format&fit=crop&w=400&q=80" alt="Nike Cortez" />
+            <div class="product-hover">
+              <button class="quick-view-btn">Quick View</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-brand">NIKE</span>
+            <h3 class="product-name">Cortez Classic</h3>
+            <div class="product-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-count">(365)</span>
+            </div>
+            <div class="product-price">
+              <span class="current-price">$109.99</span>
+              <span class="original-price">$130.00</span>
+            </div>
+            <button class="btn btn-add-cart">Add to Cart</button>
+          </div>
         </div>
       </div>
-      <div class="promo-item">
-        <img src="https://via.placeholder.com/600x300?text=Current+Promo" alt="Current Promotion" />
-        <div class="promo-content">
-          <h3>Current Promotions</h3>
-          <p>Enjoy special discounts on select styles.</p>
-          <a href="#" class="btn btn-primary">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Exclusive Launches Banner -->
+  <section class="exclusive-banner">
+    <div class="container">
+      <div class="exclusive-content">
+        <div class="exclusive-text">
+          <h2>Exclusive Launches</h2>
+          <p>First access to limited edition drops and exclusive collaborations</p>
+          <button class="btn btn-light">Join The Club</button>
         </div>
+        <div class="exclusive-image">
+          <img src="https://images.unsplash.com/photo-1556821552-5282a1fbff1b?ixlib=rb-4.0.1&auto=format&fit=crop&w=600&q=80" alt="Limited Edition" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Promotions & Deals Section -->
+  <section class="promotions-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Special Promotions</h2>
+        <a href="#" class="view-all-link">View All →</a>
+      </div>
+      <div class="promos-grid">
+        <div class="promo-card">
+          <div class="promo-badge">SALE</div>
+          <div class="promo-image">
+            <img src="https://images.unsplash.com/photo-1506629082632-11c1b377e902?ixlib=rb-4.0.1&auto=format&fit=crop&w=500&q=80" alt="Summer Sale" />
+          </div>
+          <div class="promo-content">
+            <h3>Summer Sale</h3>
+            <p>Up to 50% off selected styles</p>
+            <a href="#" class="promo-link">Shop Sale →</a>
+          </div>
+        </div>
+
+        <div class="promo-card">
+          <div class="promo-badge">NEW</div>
+          <div class="promo-image">
+            <img src="https://images.unsplash.com/photo-1554062407-98eeb440d6a1?ixlib=rb-4.0.1&auto=format&fit=crop&w=500&q=80" alt="New Arrivals" />
+          </div>
+          <div class="promo-content">
+            <h3>New Arrivals</h3>
+            <p>Fresh kicks added daily</p>
+            <a href="#" class="promo-link">Explore Now →</a>
+          </div>
+        </div>
+
+        <div class="promo-card">
+          <div class="promo-badge">EXCLUSIVE</div>
+          <div class="promo-image">
+            <img src="https://images.unsplash.com/photo-1573151297633-4c1a83b8e2bd?ixlib=rb-4.0.1&auto=format&fit=crop&w=500&q=80" alt="Member Exclusive" />
+          </div>
+          <div class="promo-content">
+            <h3>Member Exclusive</h3>
+            <p>Unlock special member prices</p>
+            <a href="#" class="promo-link">Learn More →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Signup Section -->
+  <section class="newsletter-section">
+    <div class="container">
+      <div class="newsletter-content">
+        <h2>Stay Connected</h2>
+        <p>Get exclusive deals, early access to new releases, and insider tips delivered to your inbox</p>
+        <form class="newsletter-form" id="newsletterForm">
+          <input 
+            type="email" 
+            placeholder="Enter your email address" 
+            required 
+            class="newsletter-input"
+          />
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="footer">
-    <div class="container footer-content">
-      <div class="footer-columns">
-        <div>
-          <h4>Customer Service</h4>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Shop</h4>
           <ul>
-            <li><a href="#">Help Center</a></li>
-            <li><a href="#">Returns & Exchanges</a></li>
-            <li><a href="#">Order Tracking</a></li>
+            <li><a href="#">Men's Shoes</a></li>
+            <li><a href="#">Women's Shoes</a></li>
+            <li><a href="#">Kids' Shoes</a></li>
+            <li><a href="#">Apparel</a></li>
+            <li><a href="#">Accessories</a></li>
           </ul>
         </div>
-        <div>
-          <h4>About Foot Locker</h4>
+
+        <div class="footer-section">
+          <h4>Support</h4>
           <ul>
-            <li><a href="#">Company Info</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Shipping Info</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Size Guide</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
             <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Blog</a></li>
             <li><a href="#">Sustainability</a></li>
           </ul>
         </div>
-        <div>
-          <h4>Follow Us</h4>
-          <ul class="social-icons">
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Facebook</a></li>
-          </ul>
+
+        <div class="footer-section">
+          <h4>Connect</h4>
+          <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+            <a href="#">TikTok</a>
+            <a href="#">YouTube</a>
+          </div>
         </div>
       </div>
+
       <div class="footer-bottom">
-        <p>&copy; 2024 Foot Locker Canada. All rights reserved.</p>
+        <div class="footer-payment">
+          <span>We Accept: </span>
+          <span class="payment-methods">💳 Visa, Mastercard, Apple Pay, Google Pay</span>
+        </div>
+        <div class="footer-info">
+          <p>&copy; 2024 Foot Locker Canada. All rights reserved.</p>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Cookie Settings</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </footer>
 
-  <script src="scripts.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
